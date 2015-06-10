@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+	
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+  </head>
+  <body>
+    <!----- primary panel------>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">Student Portal</h3>
+		</div>		
+		<div class="panel-body">
+			<div class="container">
+			 <form id="defaultForm" >
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12 ">
+						<h3>Personal Details </h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-lg-6">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+							<input type="text" class="form-control" placeholder="Your Name">
+						</div>					
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 col-lg-6">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+							<input type="text" class="form-control" placeholder="Your Surname">
+						</div>					
+					</div> 
+					</div>
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+							<input type="text" class="form-control" placeholder="Your Email Address">
+						</div>					
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+							<input type="text" class="form-control" placeholder="Your Mobile Number">
+						</div>					
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+							<input type="text" class="form-control" placeholder="Your Alternate Mobile Number">
+						</div>					
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-road"></i></span>
+							<input type="text" class="form-control" placeholder="Street Address">
+						</div>					
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-road"></i></span>
+							<input type="text" class="form-control" placeholder="Address Line 2">
+						</div>					
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-lg-6">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-building"></i></span>
+							<input type="text" class="form-control" placeholder="City">
+						</div>					
+					</div> 
+					<div class="col-xs-12 col-sm-6 col-lg-6">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-building"></i></span>
+							<input type="text" class="form-control" placeholder="State /  Province / Region">
+						</div>					
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-lg-6">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-search"></i></span>
+							<input type="text" class="form-control" placeholder="Zip Code">
+						</div>					
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-6">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-globe"></i></span>
+							<input type="text" class="form-control" placeholder="Country">
+						</div>					
+					</div> 					
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-lg-12 ">
+						<h3>Subject Details </h3>
+					</div>
+<!----------------- dynamic field --------->
+					<div class="row">
+						<div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Textbox</label>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="text" name="textbox[]" placeholder="Textbox #1" />
+                        </div>
+                        <div class="col-lg-4">
+                            <button type="button" class="btn btn-default btn-sm addButton" data-template="textbox">Add</button>
+                        </div>
+                    </div>
+                    <div class="form-group hide" id="textboxTemplate">
+                        <div class="col-lg-offset-3 col-lg-5">
+                            <input class="form-control" type="text" />
+                        </div>
+                        <div class="col-lg-4">
+                            <button type="button" class="btn btn-default btn-sm removeButton">Remove</button>
+                        </div>
+                    </div>							
+						</div>
+					</div>
+<!------------------------------------------>
+				</div>				
+			 </form>		
+			</div>			
+		</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="plugins/formvalidation-master/dist/js/dist/js/framework/bootstrap.js"></script>
+	<script type="text/javascript" src="plugins/formvalidation-master/dist/js/formValidation.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.addButton').on('click', function() {
+            var index = $(this).data('index');
+            if (!index) {
+                index = 1;
+                $(this).data('index', 1);
+            }
+            index++;
+            $(this).data('index', index);
+
+            var template     = $(this).attr('data-template'),
+                $templateEle = $('#' + template + 'Template'),
+                $row         = $templateEle.clone().removeAttr('id').insertBefore($templateEle).removeClass('hide'),
+                $el          = $row.find('input').eq(0).attr('name', template + '[]');
+            $('#defaultForm').formValidation('addField', $el);
+
+            // Set random value for checkbox and textbox
+            if ('checkbox' == $el.attr('type') || 'radio' == $el.attr('type')) {
+                $el.val('Choice #' + index)
+                   .parent().find('span.lbl').html('Choice #' + index);
+            } else {
+                $el.attr('placeholder', 'Textbox #' + index);
+            }
+
+            $row.on('click', '.removeButton', function(e) {
+                $('#defaultForm').formValidation('removeField', $el);
+                $row.remove();
+            });
+        });
+
+        $('#defaultForm')
+            .formValidation({
+                message: 'This value is not valid',
+                icon: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    'textbox[]': {
+                        validators: {
+                            notEmpty: {
+                                message: 'The textbox field is required'
+                            }
+                        }
+                    },
+                    'checkbox[]': {
+                        validators: {
+                            notEmpty: {
+                                message: 'The checkbox field is required'
+                            }
+                        }
+                    },
+                    'radio[]': {
+                        validators: {
+                            notEmpty: {
+                                message: 'The radio field is required'
+                            }
+                        }
+                    }
+                }
+            })
+            .on('err.field.fv', function(e, data) {
+                //console.log('err.field.fv -->', data.element);
+            })
+            .on('success.field.fv', function(e, data) {
+                //console.log('success.field.fv -->', data.element);
+            })
+            .on('added.field.fv', function(e, data) {
+                //console.log('Added element -->', data.field, data.element);
+            })
+            .on('removed.field.fv', function(e, data) {
+                //console.log('Removed element -->', data.field, data.element);
+            });
+    });
+</script>
+  </body>
+</html>
+
+
